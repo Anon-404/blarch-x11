@@ -165,7 +165,7 @@ cleanup(){
 }
 
 banner
-# pkgInstaller
+pkgInstaller
 #vscode
 #envsetup
 blconf
