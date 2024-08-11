@@ -36,7 +36,7 @@ pkgInstaller(){
     echo ""
     echo -e "${yellow}[+] ${green}Updating system before installation ${white}"
     sudo pacman -Syu --noconfirm
-    for i in dialog tzdata fluxbox librsvg inetutils dbus gtk-engine-murrine firefox pulseaudio 
+    for i in dialog tzdata fluxbox librsvg inetutils dbus gtk-engine-murrine firefox at-spi2-core pulseaudio 
     do
         if [ -f /var/lib/pacman/db.lck ]
         then
