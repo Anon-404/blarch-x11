@@ -56,36 +56,43 @@ pkgInstaller(){
 }
 
 blconf(){
-
-    echo -e "${yellow}[+] ${green}configuring archlinux for blackarch ${white}"
+    echo -e "${yellow}[+] ${green}Configuring Arch Linux for BlackArch ${white}"
     echo ""
+
     for x in blackarch-wallpaper blackarch-config-x11 blackarch-config-fluxbox
     do
         if [ -f /var/lib/pacman/db.lck ]
         then
+            echo -e "${yellow}[+] ${green}Removing lock file ${white}"
             sudo rm -rf /var/lib/pacman/db.lck
         fi
+
         echo ""
         echo -e "${yellow}[+] ${green}Installing $x ${white}"
         echo ""
 
         while ! sudo pacman -S --noconfirm $x --needed; do
-            echo -e "${red}[-] Failed to install $x Retrying...${white}"
+            echo -e "${red}[-] Failed to install $x. Retrying...${white}"
             sleep 2
         done
 
         echo -e "${green}[+] Successfully installed $x ${white}"
     done
+    touch .Xdefaults .Xresources
+    echo -e "${yellow}[+] ${green}Copying xprofile to /etc/xprofile ${white}"
+    sudo cp -a /usr/share/blackarch/config/x11/xprofile /etc/xprofile || echo -e "${red}Failed to copy xprofile${white}"
 
-    # blackarch-config-x11
-    cp -a /usr/share/blackarch/config/x11/xprofile /etc/xprofile
-    cp -a /usr/share/blackarch/config/x11/Xresources ~/.Xresources
-    cp -a /usr/share/blackarch/config/x11/Xdefaults ~/.Xdefaults
+    echo -e "${yellow}[+] ${green}Copying Xresources to ~/.Xresources ${white}"
+    sudo cp -a /usr/share/blackarch/config/x11/Xresources $HOME/.Xresources || echo -e "${red}Failed to copy Xresources${white}"
 
-    # blackarch-config-fluxbox
-    rm -rf /usr/share/fluxbox
-    cp -a /usr/share/blackarch/config/fluxbox /usr/share/
+    echo -e "${yellow}[+] ${green}Copying Xdefaults to ~/.Xdefaults ${white}"
+    sudo cp -a /usr/share/blackarch/config/x11/Xdefaults $HOME/.Xdefaults || echo -e "${red}Failed to copy Xdefaults${white}"
 
+    echo -e "${yellow}[+] ${green}Copying fluxbox configuration ${white}"
+    sudo rm -rf /usr/share/fluxbox || echo -e "${red}Failed to remove old fluxbox configuration${white}"
+    sudo cp -a /usr/share/blackarch/config/fluxbox /usr/share/ || echo -e "${red}Failed to copy fluxbox configuration${white}"
+    cat /usr/share/blackarch/config/x11/Xdefaults >> .Xdefaults
+    cat /usr/share/blackarch/config/x11/Xresources >> .Xresources
 }
 
 vscode(){
