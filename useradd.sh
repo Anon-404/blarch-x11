@@ -177,6 +177,7 @@ usr(){
     mkdir -p /home/$user/.config/neofetch/
     cp -a $HOME/.config/neofetch/config.conf /home/$user/.config/neofetch/config.conf
     sudo chown -R $user:$user /home/$user/.config/neofetch/
+    mv desktop.sh /home/$user
     sleep 5
 }
 
