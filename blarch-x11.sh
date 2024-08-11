@@ -122,7 +122,7 @@ notice(){
         touch blackarch
 	chmod 777 blackarch
         echo "#! /bin/bash" >> blackarch
-        echo "termux-x11 :1 &" >> blackarch
+        echo "" >> blackarch
         echo "clear && pd sh archlinux --shared-tmp" >> blackarch
         chmod 777 * && chmod 777 blackarch
         mv blackarch /data/data/com.termux/files/usr/bin
