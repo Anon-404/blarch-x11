@@ -1,8 +1,7 @@
 # blarch-x11
-Archlinux is mostly used by advanced linux users <br>
-Now you can get archlinux on termux-x11 app with awesome desktop environment 💻📱 <br>
-Stop playing with kali nethunter like a noob 
-
+Arch Linux is a favorite among advanced Linux users for its versatility and minimalism. Now, you can enjoy Arch Linux on your mobile device with Termux-X11, configured to resemble BlackArch, complete with the BlackArch mirror list and a lightweight Fluxbox environment. 💻📱
+<br>
+Move beyond Kali NetHunter—embrace the power and simplicity of Arch Linux on Termux.
 ## Screenshots
 
 ![App Screenshot](https://i.imgur.com/hK1F7iB.jpg)
@@ -13,13 +12,14 @@ Stop playing with kali nethunter like a noob
 
 ## Features
 
-[+] Lite weight (3GB - 4GB)<br>
-[+] Fixed sound issue<br>
-[+] According to your choise it's auto install penetration testing tools(Hacking tools)<br>
-[+] According to your choise it's auto install some highly recommended programming languages<br>
-[+] VLC Media Player<br>
-[+] Fluxbox with blackarch configuration<br>
-[+] Firefox for secure browsing<br>
+- **Lightweight Installation**: Requires only 3GB - 4GB of space.
+- **Sound Support**: Audio issues have been resolved for seamless usage.
+- **Penetration Testing Tools**: Optionally install a wide range of BlackArch tools, tailored to your needs.
+- **Programming Languages**: Automatically installs highly recommended programming languages of your choice.
+- **Penetration testing tools**: Automatically installs highly recommended Penetration testing tools of your choice.
+- **VLC Media Player**: Included for all your multimedia playback needs.
+- **Fluxbox Environment**: Pre-configured with a BlackArch-inspired setup for a sleek and efficient user experience.
+- **Firefox Browser**: Installed for secure and fast web browsing.
 
 ## Installation
 
