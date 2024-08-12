@@ -1,2 +1,78 @@
 # blarch-x11
-Blackarch configuration for archlinux 
+Archlinux is mostly used by advanced linux users <br>
+Now you can get archlinux on termux-x11 app with awesome desktop environment 💻📱 <br>
+Stop playing with kali nethunter like a noob 
+
+## Screenshots
+
+![App Screenshot](https://i.imgur.com/hK1F7iB.jpg)
+
+![App Screenshot](https://i.imgur.com/vTgM5WR.jpeg)
+
+![App Screenshot]()
+
+## Features
+
+[+] Lite weight (3GB - 4GB)<br>
+[+] Fixed sound issue<br>
+[+] According to your choise it's auto install penetration testing tools(Hacking tools)<br>
+[+] According to your choise it's auto install some highly recommended programming languages<br>
+[+] VLC Media Player<br>
+[+] Fluxbox with blackarch configuration<br>
+[+] Firefox for secure browsing<br>
+
+## Installation
+
+- Step 1 : Install termux from [Here](https://f-droid.org/repo/com.termux_1020.apk)
+- Step 2 : Run following commands 👇👇
+
+```bash
+pkg update -y
+pkg install git -y
+git clone https://github.com/Anon-404/blarch-x11
+cd blarch-x11
+chmod 777 *
+bash blarch-x11.sh
+```
+
+- Step 3 : After installing archlinux just run following commands 👇
+
+```bash
+blackarch
+```
+```bash
+bash useradd.sh
+```
+
+- Step 4 : exit termux
+
+### Note : Now we will install gui on our archlinux
+
+- Step 5 : run step by step
+
+```bash
+blackarch 
+```
+```bash
+sudo bash desktop.sh
+```
+- Step 6 : Install termux-x11 app from [Here](https://github.com/termux/termux-x11/releases/download/nightly/app-universal-debug.apk)
+
+- Step 7 : exit termux then open again and run following commands
+
+```bash
+blackarch
+```
+```bash
+x11-start
+```
+- Step 8 : open termux-x11 app to access desktop environment
+
+#### Note
+
+- To stop x11
+```bash
+CTRL + C
+```
+
+## provided by team Anon404
