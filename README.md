@@ -70,9 +70,8 @@ x11-start
 
 #### Note
 
-- To stop x11
-```bash
-CTRL + C
-```
+- To stop x11 press `CTRL + C`
 
 ## provided by team Anon404
+
+This version is tailored for your `blarch-x11` repository and highlights the Fluxbox environment while maintaining clear and detailed instructions.
