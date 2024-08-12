@@ -4,9 +4,9 @@ Arch Linux is a favorite among advanced Linux users for its versatility and mini
 Move beyond Kali NetHunter—embrace the power and simplicity of Arch Linux on Termux.
 ## Screenshots
 
-![App Screenshot](https://i.imgur.com/hK1F7iB.jpg)
+![App Screenshot](https://i.imgur.com/UHYNwju.jpeg)
 
-![App Screenshot](https://i.imgur.com/vTgM5WR.jpeg)
+![App Screenshot](https://i.imgur.com/YwEJkhA.jpeg)
 
 ![App Screenshot]()
 
